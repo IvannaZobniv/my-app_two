@@ -1,30 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React from "react";
+import  {Helmet} from "react-helmet";
 function App() {
   return (
     <div className="App">
-      <head>
+      <Helmet>
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="App.css"/>
-         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext"  rel="stylesheet"/>
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous"/>
-         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-         <title>Mogo</title>
-      </head>
+        <link
+            href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossOrigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <title>Mogo</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="script/script.js"></script>
+      </Helmet>
       <header className="header" id="header">
         <div className="container">
           <div className="header__inner">
             <div className="header__logo">MoGo</div>
 
             <nav className="nav" id="nav">
+              {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
               <a className="nav__link" href="#" data-scroll="#about">About</a>
+              {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
               <a className="nav__link" href="#" data-scroll="#services">Service</a>
+              {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
               <a className="nav__link" href="#" data-scroll="#blog">Blog</a>
+              {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
               <a className="nav__link" href="#" data-scroll="#works">Work</a>
+              {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
               <a className="nav__link" href="#" data-scroll="#footer">Contact</a>
+              {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
               <a className="nav__link" href="#"><i className="fas fa-shopping-cart"></i></a>
+              {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
               <a className="nav__link" href="#"><i className="fas fa-search"></i></a>
             </nav>
 
@@ -41,7 +64,7 @@ function App() {
             <div className="intro__inner">
               <h2 className="intro__suptitle">Creative Template</h2>
               <h1 className="intro__title">Welcome to MoGo</h1>
-
+              {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
               <a className="btn" href="#">Learn More</a>
             </div>
           </div>
@@ -89,6 +112,7 @@ function App() {
                 <div className="card__inner">
                   <div className="card__img">
                     <img src="images/about/1.jpg" alt=""/>
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="card__icon" href="#" target="_blank">
                         <i className="fas fa-user-friends"></i>
                       </a>
@@ -101,6 +125,7 @@ function App() {
                 <div className="card__inner">
                   <div className="card__img">
                     <img src="images/about/2.jpg" alt=""/>
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="card__icon" href="#" target="_blank">
                         <i className="fas fa-user-friends"></i>
                       </a>
@@ -113,6 +138,7 @@ function App() {
                 <div className="card__inner">
                   <div className="card__img">
                     <img src="images/about/3.jpg" alt=""/>
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="card__icon" href="#" target="_blank">
                         <i className="fas fa-user-friends"></i>
                       </a>
@@ -219,7 +245,7 @@ function App() {
             </div>
 
             <div className="devices">
-              <img className="devices__item" src="images/ipad.png" alt=""/>
+              <img className="devices__item" src="./images/ipad.png" alt=""/>
                 <img className="devices__item  devices__item--iphone" src="images/iphone.png" alt=""/>
             </div>
 
@@ -290,7 +316,7 @@ function App() {
           <div className="container">
 
             <div className="reviews">
-              <div data-slider>
+              <div data-slider="">
                 <div>
                   <div className="reviews__item">
                     <img className="reviews__photo" src="images/avatar2.png" alt=""/>
@@ -333,15 +359,19 @@ function App() {
                   </div>
                   <div className="card__text">
                     <div className="social">
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-facebook-f"></i>
                       </a>
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-twitter"></i>
                       </a>
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-pinterest-p"></i>
                       </a>
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-instagram"></i>
                       </a>
@@ -361,15 +391,19 @@ function App() {
                   </div>
                   <div className="card__text">
                     <div className="social">
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-facebook-f"></i>
                       </a>
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-twitter"></i>
                       </a>
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-pinterest-p"></i>
                       </a>
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-instagram"></i>
                       </a>
@@ -389,15 +423,19 @@ function App() {
                   </div>
                   <div className="card__text">
                     <div className="social">
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-facebook-f"></i>
                       </a>
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-twitter"></i>
                       </a>
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-pinterest-p"></i>
                       </a>
+                      {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="social__item" href="#" target="_blank">
                         <i className="fab fa-instagram"></i>
                       </a>
@@ -535,7 +573,7 @@ function App() {
 
             <div className="reviews">
 
-              <div data-slider>
+              <div data-slider="">
                 <div>
                   <div className="reviews__item">
                     <img className="reviews__photo2" src="images/avatar.png" alt=""/>
@@ -621,6 +659,7 @@ function App() {
             <div className="blog">
               <div className="blog__item">
                 <div className="blog__header">
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a href="#">
                     <img className="blog__photo" src="images/blog/1.jpg" alt=""/>
                   </a>
@@ -631,6 +670,7 @@ function App() {
                 </div>
                 <div className="blog__content">
                   <div className="blog__title">
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#">Lorem ipsum dolor sit amet</a>
                   </div>
                   <div className="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -649,6 +689,7 @@ function App() {
 
               <div className="blog__item">
                 <div className="blog__header">
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a href="#">
                     <img className="blog__photo" src="images/blog/2.jpg" alt=""/>
                   </a>
@@ -659,6 +700,7 @@ function App() {
                 </div>
                 <div className="blog__content">
                   <div className="blog__title">
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#">sed do eiusmod tempor</a>
                   </div>
                   <div className="blog__text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -677,6 +719,7 @@ function App() {
 
               <div className="blog__item">
                 <div className="blog__header">
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a href="#">
                     <img className="blog__photo" src="images/blog/3.jpg" alt=""/>
                   </a>
@@ -687,6 +730,7 @@ function App() {
                 </div>
                 <div className="blog__content">
                   <div className="blog__title">
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#">incididunt ut labore et dolore</a>
                   </div>
                   <div className="blog__text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -714,7 +758,7 @@ function App() {
             <div className="map">
               <h2 className="map__title">
                 <div><i className="fas fa-map-marker-alt"></i></div>
-                <a href="https://www.google.com/maps/@50.4182955,30.5204468,12.25z" target="_blank">Open Map</a>
+                <a href="https://www.google.com/maps/@50.4182955,30.5204468,12.25z" target="_blank" rel="noreferrer">Open Map</a>
               </h2>
             </div>
           </div>
@@ -736,27 +780,35 @@ function App() {
                   </div>
                   <div className="footer__social-content">
                     Follow Us:
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#" target="_blank">
                       <i className="fab fa-facebook"></i>
                     </a>
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#" target="_blank">
                       <i className="fab fa-twitter"></i>
                     </a>
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#" target="_blank">
                       <i className="fab fa-instagram"></i>
                     </a>
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#" target="_blank">
                       <i className="fab fa-pinterest-p"></i>
                     </a>
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#" target="_blank">
                       <i className="fab fa-google-plus-square"></i>
                     </a>
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#" target="_blank">
                       <i className="fab fa-youtube"></i>
                     </a>
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#" target="_blank">
                       <i className="fas fa-basketball-ball"></i>
                     </a>
+                    {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#" target="_blank">
                       <i className="fab fa-tumblr"></i>
                     </a>
@@ -777,6 +829,7 @@ function App() {
                   <div className="blogs__item">
                     <img className="blogs__img" src="images/blog/1.jpg" alt=""/>
                       <div className="blogs__content">
+                        {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                         <a className="blogs__title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
                         <div className="blogs__date">Jan 9, 2016</div>
                       </div>
@@ -785,6 +838,7 @@ function App() {
                   <div className="blogs__item">
                     <img className="blogs__img" src="images/blog/2.jpg" alt=""/>
                       <div className="blogs__content">
+                        {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                         <a className="blogs__title" href="#">Consectetur adipiscing elit,sed do eiusmod tempor</a>
                         <div className="blogs__date">Jan 9, 2016</div>
                       </div>
@@ -793,6 +847,7 @@ function App() {
                   <div className="blogs__item">
                     <img className="blogs__img" src="images/blog/3.jpg" alt=""/>
                       <div className="blogs__content">
+                        {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                         <a className="blogs__title" href="#">sed do eiusmod tempor incididunt ut labore</a>
                         <div className="blogs__date">Jan 9, 2016</div>
                       </div>
@@ -804,33 +859,43 @@ function App() {
                 <div className="footer__title">Instagram</div>
 
                 <div className="instagram">
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
                     <img src="images/instagram/1.jpg" alt=""/>
                   </a>
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
                     <img src="images/instagram/2.jpg" alt=""/>
                   </a>
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
                     <img src="images/instagram/3.jpg" alt=""/>
                   </a>
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
                     <img src="images/instagram/4.jpg" alt=""/>
                   </a>
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
                     <img src="images/instagram/5.jpg" alt=""/>
                   </a>
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
                     <img src="images/instagram/6.jpg" alt=""/>
                   </a>
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
                     <img src="images/instagram/7.jpg" alt=""/>
                   </a>
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
                     <img src="images/instagram/8.jpg" alt=""/>
                   </a>
+                  {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
                     <img src="images/instagram/9.jpg" alt=""/>
                   </a>
+
                 </div>
               </div>
 
@@ -843,9 +908,6 @@ function App() {
           </div>{/*.container */}
         </footer>
       </div>{/*.page */}
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-      <script src="script.js"></script>
     </div>
   );
 }

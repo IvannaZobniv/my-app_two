@@ -1,4 +1,4 @@
-/* global $ */
+// /* global $ */
 // $(function() {
 //
 //     let header = $("#header"),
@@ -43,6 +43,7 @@
 //     });
 //
 // });
+// ----------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', function() {
     let header = document.getElementById("header"),
         intro = document.getElementById("intro"),
@@ -82,6 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
     /* Slider */
     let slider = document.querySelector("[data-slider]");
     if (slider) {
-        // Ваш код ініціалізації слайдера тут (можливо, використання звичайних DOM-методів для створення слайдера)
+        // ініціалізації слайдера
     }
 });
