@@ -1,4 +1,10 @@
 import './App.css';
+import {about1,about2,about3,blog1, blog2,blog3,clients1,clients2,clients3,clients4,instagram1, instagram2, instagram3,
+  instagram4, instagram5, instagram6, instagram7,instagram8,instagram9,logos1,logos2,logos3,logos4,logos5,logos6,
+  service_creativity,service_photo,service_photo2,service_web_design, services_creativity,services_css_html,
+  services_digital,services_photography,services_seo,services_webdesign,team1,team2,team3,works1,works2,works3,works4,
+  works5, works6, works7,avatar, avatar2,ipad,iphone,wedo } from './images/index';
+
 import React from "react";
 import  {Helmet} from "react-helmet";
 function App() {
@@ -8,21 +14,9 @@ function App() {
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="App.css"/>
-        <link
-            href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-            crossOrigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-        />
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <title>Mogo</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -111,7 +105,7 @@ function App() {
               <div className="card__item">
                 <div className="card__inner">
                   <div className="card__img">
-                    <img src="images/about/1.jpg" alt=""/>
+                    <img src={about1} alt=""/>
                     {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="card__icon" href="#" target="_blank">
                         <i className="fas fa-user-friends"></i>
@@ -124,7 +118,7 @@ function App() {
               <div className="card__item">
                 <div className="card__inner">
                   <div className="card__img">
-                    <img src="images/about/2.jpg" alt=""/>
+                    <img src={about2} alt=""/>
                     {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="card__icon" href="#" target="_blank">
                         <i className="fas fa-user-friends"></i>
@@ -137,7 +131,7 @@ function App() {
               <div className="card__item">
                 <div className="card__inner">
                   <div className="card__img">
-                    <img src="images/about/3.jpg" alt=""/>
+                    <img src={about3} alt=""/>
                     {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                       <a className="card__icon" href="#" target="_blank">
                         <i className="fas fa-user-friends"></i>
@@ -194,38 +188,37 @@ function App() {
 
             <div className="services">
               <div className="services__item  services__item--border">
-                <img className="services__icon" src="images/services/photography.png" alt=""/>
+                <img className="services__icon" src={services_photography} alt=""/>
 
                   <div className="services__title">Photography</div>
                   <div className="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
               </div>
               <div className="services__item  services__item--border">
-                <img className="services__icon" src="images/services/webdesign.png" alt=""/>
+                <img className="services__icon" src={services_webdesign} alt=""/>
 
                   <div className="services__title">Web Design</div>
                   <div className="services__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..</div>
               </div>
               <div className="services__item  services__item--border">
-                <img className="services__icon" src="images/services/creativity.png" alt=""/>
+                <img className="services__icon" src={services_creativity} alt=""/>
 
                   <div className="services__title">Creativity</div>
                   <div className="services__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
               </div>
               <div className="services__item">
-                <img className="services__icon" src="images/services/seo.png" alt=""/>
+                <img className="services__icon" src={services_seo} alt=""/>
 
                   <div className="services__title">seo</div>
                   <div className="services__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
               </div>
               <div className="services__item">
-                <img className="services__icon" src="images/services/css-html.png" alt=""/>
+                <img className="services__icon" src={services_css_html} alt=""/>
 
                   <div className="services__title">Css/Html</div>
                   <div className="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
               </div>
               <div className="services__item">
-                <img className="services__icon" src="images/services/digital.png" alt=""/>
-
+                <img className="services__icon" src={services_digital} alt=""/>
                   <div className="services__title">digital</div>
                   <div className="services__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
               </div>
@@ -245,8 +238,8 @@ function App() {
             </div>
 
             <div className="devices">
-              <img className="devices__item" src="./images/ipad.png" alt=""/>
-                <img className="devices__item  devices__item--iphone" src="images/iphone.png" alt=""/>
+              <img className="devices__item" src={ipad} alt=""/>
+                <img className="devices__item  devices__item--iphone" src={iphone} alt=""/>
             </div>
 
           </div>
@@ -267,7 +260,7 @@ function App() {
 
             <div className="wedo">
               <div className="wedo__item">
-                <img className="wedo__img" src="images/wedo.jpg" alt=""/>
+                <img className="wedo__img" src={wedo} alt=""/>
               </div>
 
               <div className="wedo__item">
@@ -275,7 +268,7 @@ function App() {
                 <div className="accordion">
                   <div className="accordion__item" data-collapse="#wedo_1">
                     <div className="accordion__header">
-                      <img className="accordion__icon" src="images/service/photo.png" alt=""/>
+                      <img className="accordion__icon" src={service_photo} alt=""/>
                         <div className="accordion__title">Photography</div>
                     </div>
                     <div className="accordion__content" id="wedo_1">
@@ -285,7 +278,7 @@ function App() {
 
                   <div className="accordion__item active" data-collapse="#wedo_2">
                     <div className="accordion__header">
-                      <img className="accordion__icon" src="images/service/creativity.png" alt=""/>
+                      <img className="accordion__icon" src={service_creativity} alt=""/>
                         <div className="accordion__title">Creativity</div>
                     </div>
                     <div className="accordion__content" id="wedo_2">
@@ -295,7 +288,7 @@ function App() {
 
                   <div className="accordion__item" data-collapse="#wedo_3">
                     <div className="accordion__header">
-                      <img className="accordion__icon" src="images/service/web design.png" alt=""/>
+                      <img className="accordion__icon" src={service_web_design} alt=""/>
                         <div className="accordion__title">web design</div>
                     </div>
                     <div className="accordion__content" id="wedo_3">
@@ -319,7 +312,7 @@ function App() {
               <div data-slider="">
                 <div>
                   <div className="reviews__item">
-                    <img className="reviews__photo" src="images/avatar2.png" alt=""/>
+                    <img className="reviews__photo" src={avatar2} alt=""/>
                       <div className="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
                       <div className="reviews__author">Jon Doe</div>
                   </div>
@@ -327,7 +320,7 @@ function App() {
 
                 <div>
                   <div className="reviews__item">
-                    <img className="reviews__photo" src="images/avatar2.png" alt=""/>
+                    <img className="reviews__photo" src={avatar2} alt=""/>
                       <div className="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
                       <div className="reviews__author">Jon Doe</div>
                   </div>
@@ -355,7 +348,7 @@ function App() {
               <div className="card__item">
                 <div className="card__inner">
                   <div className="card__img">
-                    <img src="images/team/1.jpg" alt=""/>
+                    <img src={team1} alt=""/>
                   </div>
                   <div className="card__text">
                     <div className="social">
@@ -387,7 +380,7 @@ function App() {
               <div className="card__item">
                 <div className="card__inner">
                   <div className="card__img">
-                    <img src="images/team/2.jpg" alt=""/>
+                    <img src={team2} alt=""/>
                   </div>
                   <div className="card__text">
                     <div className="social">
@@ -419,7 +412,7 @@ function App() {
               <div className="card__item">
                 <div className="card__inner">
                   <div className="card__img">
-                    <img src="images/team/3.jpg" alt=""/>
+                    <img src={team3} alt=""/>
                   </div>
                   <div className="card__text">
                     <div className="social">
@@ -460,22 +453,22 @@ function App() {
 
             <div className="logos">
               <div className="logos__item">
-                <img className="logos__img" src="images/logos/1.png" alt=""/>
+                <img className="logos__img" src={logos1} alt=""/>
               </div>
               <div className="logos__item">
-                <img className="logos__img" src="images/logos/2.png" alt=""/>
+                <img className="logos__img" src={logos2} alt=""/>
               </div>
               <div className="logos__item">
-                <img className="logos__img" src="images/logos/3.png" alt=""/>
+                <img className="logos__img" src={logos3} alt=""/>
               </div>
               <div className="logos__item">
-                <img className="logos__img" src="images/logos/4.png" alt=""/>
+                <img className="logos__img" src={logos4} alt=""/>
               </div>
               <div className="logos__item">
-                <img className="logos__img" src="images/logos/5.png" alt=""/>
+                <img className="logos__img" src={logos5} alt=""/>
               </div>
               <div className="logos__item">
-                <img className="logos__img" src="images/logos/6.png" alt=""/>
+                <img className="logos__img" src={logos6} alt=""/>
               </div>
             </div>
 
@@ -498,36 +491,17 @@ function App() {
           <div className="works">
             <div className="works__col">
               <div className="works__item">
-                <img className="works__image" src="images/works/1.jpg" alt=""/>
+                <img className="works__image" src={works1} alt=""/>
                   <div className="works__info">
-                    <img className="works__imag" src="images/service/photo2.png" alt=""/>
+                    <img className="works__imag" src={service_photo2} alt=""/>
                       <div className="works__title">creatively designed</div>
                       <div className="works__text">Lorem ipsum dolor sit</div>
                   </div>
               </div>
               <div className="works__item">
-                <img className="works__image" src="images/works/2.jpg" alt=""/>
+                <img className="works__image" src={works2} alt=""/>
                   <div className="works__info">
-                    <img className="works__imag" src="images/service/photo2.png" alt=""/>
-                      <div className="works__title">creatively designed</div>
-                      <div className="works__text">Lorem ipsum dolor sit</div>
-                  </div>
-              </div>
-            </div>
-
-            <div className="works__col">
-              <div className="works__item">
-                <img className="works__image" src="images/works/3.jpg" alt=""/>
-                  <div className="works__info">
-                    <img className="works__imag" src="images/service/photo2.png" alt=""/>
-                      <div className="works__title">creatively designed</div>
-                      <div className="works__text">Lorem ipsum dolor sit</div>
-                  </div>
-              </div>
-              <div className="works__item">
-                <img className="works__image" src="images/works/4.jpg" alt=""/>
-                  <div className="works__info">
-                    <img className="works__imag" src="images/service/photo2.png" alt=""/>
+                    <img className="works__imag" src={service_photo2} alt=""/>
                       <div className="works__title">creatively designed</div>
                       <div className="works__text">Lorem ipsum dolor sit</div>
                   </div>
@@ -536,9 +510,17 @@ function App() {
 
             <div className="works__col">
               <div className="works__item">
-                <img className="works__image" src="images/works/5.jpg" alt=""/>
+                <img className="works__image" src={works3} alt=""/>
                   <div className="works__info">
-                    <img className="works__imag" src="images/service/photo2.png" alt=""/>
+                    <img className="works__imag" src={service_photo2} alt=""/>
+                      <div className="works__title">creatively designed</div>
+                      <div className="works__text">Lorem ipsum dolor sit</div>
+                  </div>
+              </div>
+              <div className="works__item">
+                <img className="works__image" src={works4} alt=""/>
+                  <div className="works__info">
+                    <img className="works__imag" src={service_photo2} alt=""/>
                       <div className="works__title">creatively designed</div>
                       <div className="works__text">Lorem ipsum dolor sit</div>
                   </div>
@@ -547,17 +529,28 @@ function App() {
 
             <div className="works__col">
               <div className="works__item">
-                <img className="works__image" src="images/works/6.jpg" alt=""/>
+                <img className="works__image" src={works5} alt=""/>
                   <div className="works__info">
-                    <img className="works__imag" src="images/service/photo2.png" alt=""/>
+                    <img className="works__imag" src={service_photo2} alt=""/>
+                      <div className="works__title">creatively designed</div>
+                      <div className="works__text">Lorem ipsum dolor sit</div>
+                  </div>
+              </div>
+            </div>
+
+            <div className="works__col">
+              <div className="works__item">
+                <img className="works__image" src={works6} alt=""/>
+                  <div className="works__info">
+                    <img className="works__imag" src={service_photo2} alt=""/>
                       <div className="works__title">creatively designed</div>
                       <div className="works__text">Lorem ipsum dolor sit</div>
                   </div>
               </div>
               <div className="works__item">
-                <img className="works__image" src="images/works/7.jpg" alt=""/>
+                <img className="works__image" src={works7} alt=""/>
                   <div className="works__info">
-                    <img className="works__imag" src="images/service/photo2.png" alt=""/>
+                    <img className="works__imag" src={service_photo2} alt=""/>
                       <div className="works__title">creatively designed</div>
                       <div className="works__text">Lorem ipsum dolor sit</div>
                   </div>
@@ -576,7 +569,7 @@ function App() {
               <div data-slider="">
                 <div>
                   <div className="reviews__item">
-                    <img className="reviews__photo2" src="images/avatar.png" alt=""/>
+                    <img className="reviews__photo2" src={avatar} alt=""/>
                       <div className="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
                       <div className="reviews__author">Joshua Earle</div>
                   </div>
@@ -584,7 +577,7 @@ function App() {
 
                 <div>
                   <div className="reviews__item">
-                    <img className="reviews__photo2" src="images/avatar.png" alt=""/>
+                    <img className="reviews__photo2" src={avatar} alt=""/>
                       <div className="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
                       <div className="reviews__author">Joshua Earle</div>
                   </div>
@@ -607,7 +600,7 @@ function App() {
 
             <div className="clients">
               <div className="clients__item">
-                <img className="clients__photo" src="images/clients/1.png" alt=""/>
+                <img className="clients__photo" src={clients1} alt=""/>
                   <div className="clients__content">
                     <div className="clients__name">Matthew Dix</div>
                     <div className="clients__prof">Graphic Design</div>
@@ -616,7 +609,7 @@ function App() {
               </div>
 
               <div className="clients__item">
-                <img className="clients__photo" src="images/clients/2.png" alt=""/>
+                <img className="clients__photo" src={clients2} alt=""/>
                   <div className="clients__content">
                     <div className="clients__name">Nick Karvounis</div>
                     <div className="clients__prof">Graphic Design</div>
@@ -625,7 +618,7 @@ function App() {
               </div>
 
               <div className="clients__item">
-                <img className="clients__photo" src="images/clients/3.png" alt=""/>
+                <img className="clients__photo" src={clients3} alt=""/>
                   <div className="clients__content">
                     <div className="clients__name">Jaelynn Castillo </div>
                     <div className="clients__prof">Graphic Design</div>
@@ -634,7 +627,7 @@ function App() {
               </div>
 
               <div className="clients__item">
-                <img className="clients__photo" src="images/clients/4.png" alt=""/>
+                <img className="clients__photo" src={clients4} alt=""/>
                   <div className="clients__content">
                     <div className="clients__name">Mike Petrucci</div>
                     <div className="clients__prof">Graphic Design</div>
@@ -661,7 +654,7 @@ function App() {
                 <div className="blog__header">
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a href="#">
-                    <img className="blog__photo" src="images/blog/1.jpg" alt=""/>
+                    <img className="blog__photo" src={blog1} alt=""/>
                   </a>
                   <div className="blog__date">
                     <div className="blog__date-day">15</div>
@@ -691,7 +684,7 @@ function App() {
                 <div className="blog__header">
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a href="#">
-                    <img className="blog__photo" src="images/blog/2.jpg" alt=""/>
+                    <img className="blog__photo" src={blog2} alt=""/>
                   </a>
                   <div className="blog__date">
                     <div className="blog__date-day">14</div>
@@ -721,7 +714,7 @@ function App() {
                 <div className="blog__header">
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a href="#">
-                    <img className="blog__photo" src="images/blog/3.jpg" alt=""/>
+                    <img className="blog__photo" src={blog3} alt=""/>
                   </a>
                   <div className="blog__date">
                     <div className="blog__date-day">12</div>
@@ -827,7 +820,7 @@ function App() {
 
                 <div className="blogs">
                   <div className="blogs__item">
-                    <img className="blogs__img" src="images/blog/1.jpg" alt=""/>
+                    <img className="blogs__img" src={blog1} alt=""/>
                       <div className="blogs__content">
                         {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                         <a className="blogs__title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
@@ -836,7 +829,7 @@ function App() {
                   </div>
 
                   <div className="blogs__item">
-                    <img className="blogs__img" src="images/blog/2.jpg" alt=""/>
+                    <img className="blogs__img" src={blog2} alt=""/>
                       <div className="blogs__content">
                         {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                         <a className="blogs__title" href="#">Consectetur adipiscing elit,sed do eiusmod tempor</a>
@@ -845,7 +838,7 @@ function App() {
                   </div>
 
                   <div className="blogs__item">
-                    <img className="blogs__img" src="images/blog/3.jpg" alt=""/>
+                    <img className="blogs__img" src={blog3} alt=""/>
                       <div className="blogs__content">
                         {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                         <a className="blogs__title" href="#">sed do eiusmod tempor incididunt ut labore</a>
@@ -860,40 +853,40 @@ function App() {
 
                 <div className="instagram">
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-                  <a className="instagram__item" href="#" target="_blank">
-                    <img src="images/instagram/1.jpg" alt=""/>
+                  <a className="instagram__item" href="#" target="_blank" >
+                    <img src={instagram1} alt=""/>
                   </a>
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
-                    <img src="images/instagram/2.jpg" alt=""/>
+                    <img src={instagram2} alt=""/>
                   </a>
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
-                    <img src="images/instagram/3.jpg" alt=""/>
+                    <img src={instagram3} alt=""/>
                   </a>
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
-                    <img src="images/instagram/4.jpg" alt=""/>
+                    <img src={instagram4} alt=""/>
                   </a>
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
-                    <img src="images/instagram/5.jpg" alt=""/>
+                    <img src={instagram5} alt=""/>
                   </a>
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
-                    <img src="images/instagram/6.jpg" alt=""/>
+                    <img src={instagram6} alt=""/>
                   </a>
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
-                    <img src="images/instagram/7.jpg" alt=""/>
+                    <img src={instagram7} alt=""/>
                   </a>
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
-                    <img src="images/instagram/8.jpg" alt=""/>
+                    <img src={instagram8} alt=""/>
                   </a>
                   {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a className="instagram__item" href="#" target="_blank">
-                    <img src="images/instagram/9.jpg" alt=""/>
+                    <img src={instagram9} alt=""/>
                   </a>
 
                 </div>

@@ -1,0 +1,55 @@
+import about1 from './about/1.jpg';
+import about2 from './about/2.jpg';
+import about3 from './about/3.jpg';
+import blog1 from './blog/1.jpg';
+import blog2 from './blog/2.jpg';
+import blog3 from './blog/3.jpg';
+import clients1 from './clients/1.png';
+import clients2 from './clients/2.png';
+import clients3 from './clients/3.png';
+import clients4 from './clients/4.png';
+import instagram1 from './instagram/1.jpg';
+import instagram2 from './instagram/2.jpg';
+import instagram3 from './instagram/3.jpg';
+import instagram4 from './instagram/4.jpg';
+import instagram5 from './instagram/5.jpg';
+import instagram6 from './instagram/6.jpg';
+import instagram7 from './instagram/7.jpg';
+import instagram8 from './instagram/8.jpg';
+import instagram9 from './instagram/9.jpg';
+import logos1 from './logos/1.png';
+import logos2 from './logos/2.png';
+import logos3 from './logos/3.png';
+import logos4 from './logos/4.png';
+import logos5 from './logos/5.png';
+import logos6 from './logos/6.png';
+import service_creativity from './service/creativity.png';
+import service_photo from './service/photo.png';
+import service_photo2 from './service/photo2.png';
+import service_web_design from './service/web design.png';
+import services_creativity from './services/creativity.png';
+import services_css_html from './services/css-html.png';
+import services_digital from './services/digital.png';
+import services_photography from './services/photography.png';
+import services_seo from './services/seo.png';
+import services_webdesign from './services/webdesign.png';
+import team1 from  './team/1.jpg';
+import team2 from  './team/2.jpg';
+import team3 from  './team/3.jpg';
+import works1 from  './works/1.jpg';
+import works2 from  './works/2.jpg';
+import works3 from  './works/3.jpg';
+import works4 from  './works/4.jpg';
+import works5 from  './works/5.jpg';
+import works6 from  './works/6.jpg';
+import works7 from  './works/7.jpg';
+import avatar from './avatar.png';
+import avatar2 from './avatar2.png';
+import ipad from './ipad.png';
+import iphone from './iphone.png';
+import wedo from './wedo.jpg';
+export { about1,about2,about3,blog1, blog2,blog3,clients1,clients2,clients3,clients4,instagram1, instagram2, instagram3,
+    instagram4, instagram5, instagram6, instagram7,instagram8,instagram9,logos1,logos2,logos3,logos4,logos5,logos6,
+    service_creativity,service_photo,service_photo2,service_web_design, services_creativity,services_css_html,
+    services_digital,services_photography,services_seo,services_webdesign, team1,team2,team3,works1,works2,works3,works4,
+    works5, works6, works7,avatar, avatar2,ipad,iphone,wedo };
